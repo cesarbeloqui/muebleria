@@ -49,6 +49,7 @@ const Sidebar = () => {
 
 const SidebarContainer = styled.div`
   text-align: center;
+  background-color: var(--primario) ;
   .sidebar-header {
     display: flex;
     justify-content: space-between;
@@ -82,7 +83,7 @@ const SidebarContainer = styled.div`
     font-size: 1rem;
     text-transform: capitalize;
     padding: 1rem 1.5rem;
-    color: var(--clr-grey-3);
+    color: var(--clr-grey-8);
     transition: var(--transition);
     letter-spacing: var(--spacing);
   }
@@ -100,7 +101,7 @@ const SidebarContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--clr-white);
+    background: var(--primario);
     transition: var(--transition);
     transform: translate(-100%);
     z-index: -1;

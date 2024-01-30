@@ -10,9 +10,9 @@ const CartPage = () => {
     return (
       <Wrapper className="page-100">
         <div className="empty">
-          <h2>Your cart is empty</h2>
-          <Link to="/products" className="btn">
-            fill it
+          <h2>Tu carrito esta vacío</h2>
+          <Link to="/productos" className="btn">
+            secciona alguno aquí
           </Link>
         </div>
       </Wrapper>
@@ -20,7 +20,7 @@ const CartPage = () => {
   }
   return (
     <main>
-      <PageHero title="cart" />
+      <PageHero title="Carrito" />
       <Wrapper className="page">
         <CartContent />
       </Wrapper>

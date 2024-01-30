@@ -21,7 +21,7 @@ const FeaturedProducts = () => {
   return (
     <Wrapper className="section">
       <div className="title">
-        <h2>featured products</h2>
+        <h2>Productos destacados</h2>
         <div className="underline"></div>
       </div>
       <div className="section-center featured">
@@ -29,15 +29,17 @@ const FeaturedProducts = () => {
           return <Product key={product.id} {...product} />;
         })}
       </div>
-      <Link to="/products" className="btn">
-        all products
+      <Link to="/productos" className="btn">
+        Mas productos
       </Link>
     </Wrapper>
   );
 };
 
 const Wrapper = styled.section`
-  background: var(--clr-grey-10);
+  background: var(--clr-grey-6);
+  color: black;
+  margin-top: 2rem;
   .featured {
     margin: 4rem auto;
     display: grid;

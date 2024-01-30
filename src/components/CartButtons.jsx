@@ -12,14 +12,14 @@ const CartButtons = () => {
   const { loginWithRedirect, myUser, logout } = useUserContext();
   return (
     <Wrapper className="cart-btn-wrapper">
-      <Link to="/cart" className="cart-btn" onClick={closeSidebar}>
+      <Link to="/carrito" className="cart-btn" onClick={closeSidebar}>
         Carrito
         <span className="cart-container">
           <FaShoppingCart />
           <span className="cart-value">{total_items}</span>
         </span>
       </Link>
-{/*       {myUser ? (
+      {/*       {myUser ? (
         <button
           type="button"
           className="auth-btn"
@@ -46,10 +46,9 @@ const Wrapper = styled.div`
   width: 225px;
 
   .cart-btn {
-    color: var(--clr-grey-1);
     font-size: 1.2rem;
     letter-spacing: var(--spacing);
-    color: var(--clr-grey-1);
+    color: var(--terciario);
     display: flex;
 
     align-items: center;
@@ -67,7 +66,7 @@ const Wrapper = styled.div`
     position: absolute;
     top: -10px;
     right: -16px;
-    background: var(--clr-primary-5);
+    background: var(--secundario);
     width: 16px;
     height: 16px;
     display: flex;

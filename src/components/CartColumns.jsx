@@ -5,11 +5,9 @@ const CartColumns = () => {
   return (
     <Wrapper>
       <div className="content">
-        <h5>item</h5>
-        <h5>price</h5>
-        <h5>quantity</h5>
-        <h5>subtotal</h5>
-        <span></span>
+        <h5>Item</h5>
+        <h5>Cantidad</h5>
+        <span>Eliminar producto</span>
       </div>
       <hr />
     </Wrapper>
@@ -26,7 +24,6 @@ const Wrapper = styled.div`
       justify-items: center;
       column-gap: 1rem;
       h5 {
-        color: var(--clr-grey-5);
         font-weight: 400;
       }
     }

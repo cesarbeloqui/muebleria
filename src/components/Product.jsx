@@ -36,6 +36,7 @@ const Wrapper = styled.article`
     object-fit: cover;
     border-radius: var(--radius-rounded);
     transition: var(--transition);
+    box-shadow: 10px -1px 36px -1px rgba(0, 0, 0, 0.5);
   }
   .link {
     position: absolute;
@@ -73,10 +74,16 @@ const Wrapper = styled.article`
   footer p {
     margin-bottom: 0;
     font-weight: 400;
+    color: var(--clr-primary-6);
+  }
+  footer h5 {
+    background-color: var(--clr-primary-1);
+    padding: .25rem .75rem;
+    border-radius: var(--radius);
   }
 
   footer p {
-    color: var(--clr-primary-5);
+    color: var(--clr-primary-7);
     letter-spacing: var(--spacing);
   }
 `;

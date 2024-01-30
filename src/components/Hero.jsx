@@ -1,23 +1,21 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import heroBcg from "../assets/hero-bcg.jpeg";
-import heroBcg2 from "../assets/hero-bcg-2.jpeg";
+import heroBcg from "../assets/hero-bcg.png";
+import heroBcg2 from "../assets/hero-bcg-2.jpg";
 
 const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
-        <h1>
-          Lorem Ipsum <br />
-          dolor sit amet
-        </h1>
+        <h1>Fábrica de muebles a medida</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est vel
-          consequatur beatae natus. Quasi, dolorem! A corrupti cumque modi!
+          Muebles de cocina, placares y vestidores. <br />
+          La atención personalizada, la garantía de 10 años de trabajo duro y la
+          confianza de nuestros clientes nos avalan.
         </p>
-        <Link to="/products" className="btn hero-btn">
-          shop now
+        <Link to="/productos" className="btn hero-btn">
+          Mira Nuestros produtos
         </Link>
       </article>
       <article className="img-container">
@@ -40,7 +38,7 @@ const Wrapper = styled.section`
     line-height: 2;
     max-width: 45em;
     margin-bottom: 2rem;
-    color: var(--clr-grey-5);
+    color: var(--cuaternario);
     font-size: 1rem;
   }
   @media (min-width: 992px) {
@@ -49,7 +47,7 @@ const Wrapper = styled.section`
     gap: 8rem;
     h1 {
       margin-bottom: 2rem;
-      font-size: 4.7rem;
+      font-size: 3rem;
     }
     p {
       font-size: 1.25rem;
@@ -72,6 +70,7 @@ const Wrapper = styled.section`
       border-radius: var(--radius-rounded);
       display: block;
       object-fit: cover;
+      box-shadow: 10px -1px 36px -1px rgba(0, 0, 0, 0.5);
     }
     .accent-img {
       position: absolute;
@@ -80,13 +79,14 @@ const Wrapper = styled.section`
       width: 250px;
       transform: translate(-50%, 20%);
       border-radius: var(--radius-rounded);
+      box-shadow: 10px -1px 36px -1px rgba(0, 0, 0, 0.5);
     }
     .img-container::before {
       content: "";
       position: absolute;
       width: 10%;
       height: 80%;
-      background: var(--clr-primary-9);
+      background: var(--secundario);
       bottom: 0%;
       left: -7%;
       border-radius: var(--radius-rounded);
@@ -97,7 +97,7 @@ const Wrapper = styled.section`
       width: 100%;
       height: 100%;
       background: transparent;
-      border: 3px solid var(--clr-primary-2);
+      border: 3px solid var(--terciario);
       bottom: -8%;
       left: 8%;
       border-radius: var(--radius-rounded);

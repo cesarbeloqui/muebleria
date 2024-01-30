@@ -5,9 +5,9 @@ const Footer = () => {
     <Wrapper>
       <h5>
         &copy; {new Date().getFullYear()}
-        <span> AlmogWer</span>
+        <span> BIOTEC</span>
       </h5>
-      <h5>All rights reserved</h5>
+      <h5>Todos los derechos reservados</h5>
     </Wrapper>
   );
 };

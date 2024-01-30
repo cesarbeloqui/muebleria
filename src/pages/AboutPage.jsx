@@ -1,17 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { PageHero } from "../components";
-import aboutImg from "../assets/hero-bcg.jpeg";
+import aboutImg from "../assets/hero-bcg.png";
 
 const AboutPage = () => {
   return (
     <main>
-      <PageHero title="about" />
+      <PageHero title="Acerca De Nosotros" />
       <Wrapper className="page section section-center">
         <img src={aboutImg} alt="desk" />
         <article>
           <div className="title">
-            <h2>our story</h2>
+            <h2>Nuestra historia</h2>
             <div className="underline"></div>
           </div>
           <p>
@@ -41,13 +41,14 @@ const Wrapper = styled.section`
     max-width: 45em;
     margin: 0 auto;
     margin-top: 2rem;
-    color: var(--clr-grey-5);
+    color: var(--clr-grey-8);
   }
   .title {
     text-align: left;
   }
   .underline {
     margin-left: 0;
+    margin-top: 0.75rem;
   }
   @media (min-width: 992px) {
     grid-template-columns: 1fr 1fr;

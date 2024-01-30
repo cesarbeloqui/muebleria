@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 /*
 =============== 
 Variables
@@ -6,13 +6,17 @@ Variables
 */
 
 :root {
+  --primario: #4f4f49;
+  --secundario: #845837;
+  --terciario: #d2d2d2;
+  --cuaternario: #d6c7c0;
   /* dark shades of primary color*/
-  --clr-primary-1: #3f6b68;
-  --clr-primary-2: hsl(176, 31%, 55%);
-  --clr-primary-3: hsl(176, 31%, 46%);
-  --clr-primary-4: hsl(176, 31%, 35%);
+  --clr-primary-1: hsl(26, 41%, 37%);
+  --clr-primary-2: hsl(26, 41%, 55%);
+  --clr-primary-3: hwb(26 42% 40%);
+  --clr-primary-4: hsl(26, 41%, 35%);
   /* primary/main color */
-  --clr-primary-5: hsl(152, 28%, 66%);
+  --clr-primary-5: hsl(22, 38%, 66%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(46, 74%, 96%);
   --clr-primary-7: hsl(46, 74%, 92%);
@@ -20,15 +24,15 @@ Variables
   --clr-primary-9: hsl(46, 74%, 81%);
   --clr-primary-10: hsl(46, 74%, 88%);
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(138, 25%, 18%);
-  --clr-grey-2: hsl(139, 25%, 23%);
-  --clr-grey-3: hsl(138, 25%, 30%);
-  --clr-grey-4: hsl(138, 25%, 39%);
+  --clr-grey-1: hsl(0, 0%, 18%);
+  --clr-grey-2: hsl(0, 0%, 23%);
+  --clr-grey-3: hsl(0, 0%, 30%);
+  --clr-grey-4: hsl(0, 0%, 39%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(88, 25%, 49%);
-  --clr-grey-6: hsl(88, 25%, 60%);
-  --clr-grey-7: hsl(88, 25%, 70%);
-  --clr-grey-8: hsl(88, 25%, 80%);
+  --clr-grey-5: hsl(0, 0%, 49%);
+  --clr-grey-6: hsl(0, 0%, 60%);
+  --clr-grey-7: hsl(0, 0%, 70%);
+  --clr-grey-8: hsl(0, 0%, 80%);
   --clr-grey-9: hsl(88, 25%, 89%);
   --clr-grey-10: hsl(88, 25%, 96%);
   --clr-white: #fff;
@@ -60,10 +64,10 @@ Global Styles
   box-sizing: border-box;
 }
 body {
-  font-family: 'lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background: var(--clr-white);
-  color: var(--clr-grey-1);
+  font-family: "lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: var(--primario);
+  color: var(--clr-white);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -83,9 +87,8 @@ h3,
 h4,
 h5 {
   letter-spacing: var(--spacing);
-  text-transform: capitalize;
   line-height: 1.25;
-  margin-bottom: 0.75rem;
+  /*   margin-bottom: 0.75rem; */
 }
 h1 {
   font-size: 2.5rem;
@@ -133,10 +136,17 @@ p {
   }
 }
 /*  global classes */
-
+.info {
+  font-size: 1.4rem;
+  background-color: #ff5858;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
 /* section */
 .section {
-  padding: 5rem 0;
+  padding: 6rem 0;
 }
 .section-center {
   width: 90vw;
@@ -195,10 +205,10 @@ p {
 .title .underline {
   width: 6rem;
   height: 0.25rem;
-  background: #49a6e9;
-  background: var(--clr-primary-5);
+  background: var(--clr-primary-1);
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.75rem;
 }
 .page-100 {
   min-height: calc(100vh - 10rem);

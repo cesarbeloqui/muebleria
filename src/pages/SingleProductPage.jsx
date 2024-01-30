@@ -59,15 +59,15 @@ const SingleProductPage = () => {
     <Wrapper>
       <PageHero title={name} product />
       <div className="section section-center page">
-        <Link to="/products" className="btn">
-          back to products
+        <Link to="/productos" className="btn">
+          Volver a productos
         </Link>
         <div className="product-center">
           <ProductImages images={images} />
           <section className="content">
             <h2>{name}</h2>
             <Stars stars={stars} reviews={reviews} />
-            <h5 className="price">{formatPrice(price)}</h5>
+            <h5 className="price">Agregá este producto al carrito y consultanos el precio</h5>
             <p className="desc">{description}</p>
             <p className="info">
               <span>Available :</span>

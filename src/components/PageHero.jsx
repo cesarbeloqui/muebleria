@@ -7,7 +7,7 @@ const PageHero = ({ title, product }) => {
       <div className="section-center">
         <h4>
           <Link to="/">Home</Link>
-          {product && <Link to="/products">/ Products</Link>}/ {title}
+          {product && <Link to="/productos">/ Productos</Link>}/ {title}
         </h4>
       </div>
     </Wrapper>
@@ -20,6 +20,7 @@ const Wrapper = styled.section`
   min-height: 10vh;
   display: flex;
   align-items: center;
+  margin-top: 2rem;
 
   color: var(--clr-primary-1);
   a {
