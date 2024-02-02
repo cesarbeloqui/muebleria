@@ -1,26 +1,26 @@
-import {
-  FaFacebook,
-  FaInstagram,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import styled from "styled-components";
 
-
 const RedesButton = () => {
-
   return (
     <Wrapper>
-      <a href="/carrito" className="cart-btn">
+      <a
+        href="https://www.facebook.com/BiotecAmoblamientos"
+        className="cart-btn"
+      >
         <span className="cart-container">
           <FaFacebook />
         </span>
       </a>
-      <a href="/carrito" className="cart-btn">
+      <a
+        href="https://www.instagram.com/biotecamoblamientos"
+        className="cart-btn"
+      >
         <span className="cart-container">
           <FaInstagram />
         </span>
       </a>
-      <a href="/carrito" className="cart-btn">
+      <a href="https://wa.me/message/XFWFB46MDS3TL1" className="cart-btn">
         <span className="cart-container">
           <FaWhatsapp />
         </span>
@@ -36,7 +36,7 @@ const Wrapper = styled.div`
   margin: 0 2rem;
   width: auto;
   .cart-btn {
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
     background: var(--clr-primary-1);
     color: var(--clr-primary-10);
     transition: var(--transition);
