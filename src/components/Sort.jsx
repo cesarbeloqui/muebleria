@@ -32,7 +32,7 @@ const Sort = () => {
       <p>{products.length} products found</p>
       <hr />
       <form>
-        <label htmlFor="sort">sort by</label>
+        <label htmlFor="sort" className="sort">Ordenar por</label>
         <select
           name="sort"
           id="sort"
@@ -65,7 +65,7 @@ const Wrapper = styled.section`
     }
     label {
       display: inline-block;
-      margin-right: 0.5rem;
+      margin-right: 1rem;
     }
   }
   @media (min-width: 768px) {
@@ -110,6 +110,7 @@ const Wrapper = styled.section`
   label {
     font-size: 1rem;
     text-transform: capitalize;
+    margin-right: 1rem;
   }
 `;
 

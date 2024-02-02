@@ -66,22 +66,8 @@ const SingleProductPage = () => {
           <ProductImages images={images} />
           <section className="content">
             <h2>{name}</h2>
-            <Stars stars={stars} reviews={reviews} />
             <h5 className="price">Agregá este producto al carrito y consultanos el precio</h5>
             <p className="desc">{description}</p>
-            <p className="info">
-              <span>Available :</span>
-              {stock > 0 ? "In stock" : "Out of stock"}
-            </p>
-            <p className="info">
-              <span>SKU :</span>
-              {sku}
-            </p>
-            <p className="info">
-              <span>Brand :</span>
-              {company}
-            </p>
-            <hr />
             {stock > 0 && <AddToCart product={product} />}
           </section>
         </div>
@@ -100,6 +86,7 @@ const Wrapper = styled.main`
     color: var(--clr-primary-5);
   }
   .desc {
+    color: var(--clr-grey-7);
     line-height: 2;
     max-width: 45em;
   }

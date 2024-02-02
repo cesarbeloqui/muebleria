@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 const CheckoutPage = () => {
   const { cart } = useCartContext();
+  console.log(cart);
   return (
     <main>
       <PageHero title="checkout" />
@@ -34,3 +35,5 @@ const Wrapper = styled.div`
   }
 `;
 export default CheckoutPage;
+
+
