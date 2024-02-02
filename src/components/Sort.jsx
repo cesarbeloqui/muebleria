@@ -29,10 +29,12 @@ const Sort = () => {
           <BsList />
         </button>
       </div>
-      <p>{products.length} products found</p>
+      <p>{products.length} productos encontrados</p>
       <hr />
       <form>
-        <label htmlFor="sort" className="sort">Ordenar por</label>
+        <label htmlFor="sort" className="sort">
+          Ordenar por
+        </label>
         <select
           name="sort"
           id="sort"
@@ -40,10 +42,8 @@ const Sort = () => {
           value={sort}
           onChange={updateSort}
         >
-          <option value="price-lowest">price(lowest)</option>
-          <option value="price-highest">price(highest)</option>
-          <option value="name-a">name(a-z)</option>
-          <option value="name-z">name(z-a)</option>
+          <option value="name-a">Nombre (a-z)</option>
+          <option value="name-z">Nombre (z-a)</option>
         </select>
       </form>
     </Wrapper>
@@ -74,6 +74,7 @@ const Wrapper = styled.section`
   p {
     text-transform: capitalize;
     margin-bottom: 0;
+    color: var(--clr-grey-9);
   }
 
   .btn-container {

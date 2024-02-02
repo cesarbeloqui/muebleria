@@ -14,7 +14,6 @@ const Product = ({ image, name, price, id }) => {
         </div>
         <footer>
           <h5>{name}</h5>
-          <p>{formatPrice(price)}</p>
         </footer>
       </Link>
       <Link to={`/products/${id}`} className="link">

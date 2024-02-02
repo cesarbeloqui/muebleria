@@ -5,6 +5,7 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { links } from "../utils/constants";
 import CartButtons from "./CartButtons";
+import RedesButton from "./RedesButton";
 import { useProductsContext } from "../context/products_context";
 import { useUserContext } from "../context/user_context";
 
@@ -31,12 +32,8 @@ const Nav = () => {
               </li>
             );
           })}
-          {myUser && (
-            <li>
-              <Link to="/checkout">checkout</Link>
-            </li>
-          )}
         </ul>
+        <RedesButton />
         <CartButtons />
       </div>
     </NavContainer>
@@ -48,7 +45,7 @@ const NavContainer = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   .nav-center {
     width: 90vw;
     margin: 0 auto;
@@ -84,7 +81,7 @@ const NavContainer = styled.nav`
     }
     .nav-center {
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto auto;
       align-items: center;
     }
     .nav-links {

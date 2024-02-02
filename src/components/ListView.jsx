@@ -12,10 +12,9 @@ const ListView = ({ products }) => {
             <img src={image} alt={name} />
             <div>
               <h4>{name}</h4>
-              <h5 className="price">{formatPrice(price)}</h5>
               <p>{description.substring(0, 150)}...</p>
               <Link to={`/products/${id}`} className="btn">
-                Details
+                Detalles
               </Link>
             </div>
           </article>
@@ -42,12 +41,13 @@ const Wrapper = styled.section`
     margin-bottom: 0.5rem;
   }
   .price {
-    color: var(--clr-primary-6);
+    color: var(--clr-primary-1);
     margin-bottom: 0.75rem;
   }
   p {
     max-width: 45em;
     margin-bottom: 1rem;
+    color: var(--clr-grey-9);
   }
   .btn {
     font-size: 0.5rem;

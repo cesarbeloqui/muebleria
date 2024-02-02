@@ -22,8 +22,8 @@ const Filters = () => {
   } = useFilterContext();
 
   const categories = getUniqueValues(all_products, "category");
-  const companies = getUniqueValues(all_products, "company");
-  const colors = getUniqueValues(all_products, "colors");
+/*   const companies = getUniqueValues(all_products, "company"); */
+/*   const colors = getUniqueValues(all_products, "colors"); */
 
   return (
     <Wrapper>
@@ -34,7 +34,7 @@ const Filters = () => {
             <input
               type="text"
               name="text"
-              placeholder="search"
+              placeholder="Buscar por nombre"
               className="search-input"
               value={text}
               onChange={updateFilters}
@@ -43,7 +43,7 @@ const Filters = () => {
           {/* end search input */}
           {/* categories */}
           <div className="form-control">
-            <h5>category</h5>
+            <h5>Categoría</h5>
             <div>
               {categories.map((c, index) => {
                 return (
@@ -65,7 +65,7 @@ const Filters = () => {
 
           {/* end categories */}
           {/* companies */}
-          <div className="form-control">
+         {/*  <div className="form-control">
             <h5>company</h5>
             <select
               name="company"
@@ -81,10 +81,10 @@ const Filters = () => {
                 );
               })}
             </select>
-          </div>
+          </div> */}
           {/* end of companies */}
           {/* colors */}
-          <div className="form-control">
+         {/*  <div className="form-control">
             <h5>colors</h5>
             <div className="colors">
               {colors.map((c, index) => {
@@ -119,10 +119,10 @@ const Filters = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
           {/* end of colors */}
           {/* price */}
-          <div className="form-control">
+          {/* <div className="form-control">
             <h5>price</h5>
             <p className="price">{formatPrice(price)}</p>
             <input
@@ -133,10 +133,10 @@ const Filters = () => {
               max={max_price}
               value={price}
             />
-          </div>
+          </div> */}
           {/* end of price */}
           {/* shipping */}
-          <div className="form-control shipping">
+          {/* <div className="form-control shipping">
             <label htmlFor="shipping">free shipping</label>
             <input
               type="checkbox"
@@ -145,11 +145,11 @@ const Filters = () => {
               onChange={updateFilters}
               checked={shipping}
             />
-          </div>
+          </div> */}
           {/*end of shipping */}
         </form>
         <button type="button" className="clear-btn" onClick={clearFilters}>
-          clear filters
+          Limpiar Filtros
         </button>
       </div>
     </Wrapper>
